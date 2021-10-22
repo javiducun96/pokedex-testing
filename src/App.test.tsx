@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react'
-import { App } from './App'
+import { Pokedex } from './Pokedex'
 
 describe('Pokédex', () => {
   it('renders the component', () => {
-    render(<App />)
+    render(<Pokedex />)
 
     expect(screen.getByText(/aquí irán los pokemon/i)).toBeInTheDocument()
   })

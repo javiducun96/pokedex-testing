@@ -1,5 +1,5 @@
 import React from 'react'
 
-export const App: React.FC = () => {
+export const Pokedex: React.FC = () => {
   return <>Aquí irán los Pokemon</>
 }
