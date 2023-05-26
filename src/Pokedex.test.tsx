@@ -13,4 +13,10 @@ describe('Pokédex', () => {
 
     expect(screen.getByText(/ivysaur/i)).toBeInTheDocument()
   })
+
+  it('muestra pokemon venusaur', () => {
+    render(<Pokedex />)
+
+    expect(screen.getByText(/venusaur/i)).toBeInTheDocument()
+  })
 })
