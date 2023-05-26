@@ -7,4 +7,10 @@ describe('Pokédex', () => {
 
     expect(screen.getByText(/bulbasaur/i)).toBeInTheDocument()
   })
+
+  it('muestra pokemon ivysaur', () => {
+    render(<Pokedex />)
+
+    expect(screen.getByText(/ivysaur/i)).toBeInTheDocument()
+  })
 })
