@@ -2,9 +2,9 @@ import { render, screen } from '@testing-library/react'
 import { Pokedex } from './Pokedex'
 
 describe('Pokédex', () => {
-  it('renderiza el componente [elimina este test, es de prueba ;)]', () => {
+  it('muestra pokemon bulbasaur', () => {
     render(<Pokedex />)
 
-    expect(screen.getByText(/aquí irán los pokemon/i)).toBeInTheDocument()
+    expect(screen.getByText(/bulbasaur/i)).toBeInTheDocument()
   })
 })
