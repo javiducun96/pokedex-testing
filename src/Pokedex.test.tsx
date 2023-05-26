@@ -1,22 +1,13 @@
 import { render, screen } from '@testing-library/react'
 import { Pokedex } from './Pokedex'
+import pokemon from './pokemon.json'
 
 describe('Pokédex', () => {
-  it('muestra pokemon bulbasaur', () => {
+  it('muestra los mismos pokemon que el listado de muestra', () => {
     render(<Pokedex />)
 
-    expect(screen.getByText(/bulbasaur/i)).toBeInTheDocument()
-  })
-
-  it('muestra pokemon ivysaur', () => {
-    render(<Pokedex />)
-
-    expect(screen.getByText(/ivysaur/i)).toBeInTheDocument()
-  })
-
-  it('muestra pokemon venusaur', () => {
-    render(<Pokedex />)
-
-    expect(screen.getByText(/venusaur/i)).toBeInTheDocument()
+    pokemon.results.forEach(({ name }) => {
+      expect(screen.getByText(name)).toBeInTheDocument()
+    })
   })
 })

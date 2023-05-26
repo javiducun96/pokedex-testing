@@ -1,11 +1,12 @@
 import React from 'react'
+import pokemon from './pokemon.json'
 
 export const Pokedex: React.FC = () => {
   return (
-    <>
-      <div>bulbasaur</div>
-      <div>ivysaur</div>
-      <div>venusaur</div>
-    </>
+    <ul>
+      {pokemon.results.map(({ name }) => (
+        <li>{name}</li>
+      ))}
+    </ul>
   )
 }
