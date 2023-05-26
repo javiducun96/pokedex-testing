@@ -4,7 +4,6 @@ import {
   waitForElementToBeRemoved,
 } from '@testing-library/react'
 import { Pokedex } from './Pokedex'
-import pokemon from './pokemon.json'
 import getPokemons from './services/getPokemons'
 
 describe('Pokédex', () => {
