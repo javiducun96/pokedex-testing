@@ -1,6 +1,6 @@
 {
   "count": 1118,
-  "next": "https://pokeapi.co/api/v2/pokemon?offset=20&limit=20",
+  "next": "https://pokeapi.co/api/v2/pokemon?offset=15&limit=15",
   "previous": null,
   "results": [
     {
@@ -64,7 +64,7 @@
       "url": "https://pokeapi.co/api/v2/pokemon/15/"
     },
     {
-      "name": "pidgey",
+      "name": "pikachu",
       "url": "https://pokeapi.co/api/v2/pokemon/16/"
     },
     {
