@@ -27,6 +27,7 @@ export const pokemonResolver = (req, res, ctx) => {
 }
 
 const getPokemon = (pokemonId) => {
+  const pokemonIdNumber = parseInt(pokemonId) - 1
   return [
     pokemon1,
     pokemon2,
@@ -43,5 +44,5 @@ const getPokemon = (pokemonId) => {
     pokemon13,
     pokemon14,
     pokemon15,
-  ][pokemonId]
+  ][pokemonIdNumber]
 }
